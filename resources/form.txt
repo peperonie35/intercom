@@ -1,0 +1,39 @@
+EditBox.EditBox1 {
+    Position = (0, 540);
+    Size = (480, 22);
+    TextSize = 13;
+
+    Renderer {
+        caretcolor = rgb(145, 180, 190);
+        padding = (14, 4, 14, 4);
+        selectedtextbackgroundcolor = rgb(190, 225, 235);
+        selectedtextcolor = rgb(150, 150, 150);
+        textcolor = rgb(100, 100, 100);
+        texture = "themes/BabyBlue.png" Part(103, 40, 72, 48) Middle(24, 0, 24, 48);
+        texturedisabled = None;
+        texturefocused = None;
+        texturehover = None;
+    }
+}
+
+ListBox.ListBox1 {
+    ItemHeight = 20;
+    MaximumItems = 0;
+    Position = (0, 10);
+    Size = (480, 502);
+    TextSize = 13;
+
+    Renderer {
+        backgroundcolor = #F5F5F5;
+        backgroundcolorhover = white;
+        bordercolor = black;
+        borders = (1, 1, 1, 1);
+        padding = (0, 0, 0, 0);
+        selectedbackgroundcolor = #006EFF;
+        selectedbackgroundcolorhover = #1E96FF;
+        selectedtextcolor = white;
+        textcolor = #3C3C3C;
+        textcolorhover = black;
+        texturebackground = None;
+    }
+}
