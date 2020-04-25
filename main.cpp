@@ -88,12 +88,8 @@ public:
         socket.setBlocking(false);
         serverPort = portS;
         serverIp = ip;
-        //if (socket.bind(serverPort) != sf::Socket::Done)
-        //{
-        // std::cout << "ereur dans le bind des sockets" << std::endl;
-        //}
         if (socket.send(autPacket, serverIp, serverPort) != sf::Socket::Done) {
-                std::cout << "erreur dans l envoie des donées en udp" << std::endl;
+                std::cout << "erreur dans l envoie des donÃ©es en udp" << std::endl;
         } else {
             std::cout << "cle de connexion envoyee au server en attente d'une reponse" << std::endl;
         }
@@ -120,7 +116,7 @@ public:
             connected = true;
             return(true);
         } else {
-            std::cout << "reponse incoherante du serveur, connexion annulé" << std::endl;
+            std::cout << "reponse incoherante du serveur, connexion annulÃ©" << std::endl;
             connected = false;
             return(false);
         }
@@ -157,7 +153,7 @@ public:
         }
         if(type == "disconnected") {
             connected = false;
-            std::cout << "vous avez été déconnecté par l'hote distant, reson: " << receivedDatas << std::endl;
+            std::cout << "vous avez Ã©tÃ© dÃ©connectÃ© par l'hote distant, reson: " << receivedDatas << std::endl;
         }
     }
     std::string getMessage(int i) {
@@ -224,7 +220,6 @@ void connectToServer(tgui::EditBox::Ptr EditBoxUsername,tgui::EditBox::Ptr EditB
 int main()
 {
     bool stop = false;
-    //chat.init("91.167.236.217", 32000, "peperonie");
     while(stop == false) {
         if(menu == "login") {
             sf::RenderWindow window(sf::VideoMode(251, 62), "intercom entre potes");
